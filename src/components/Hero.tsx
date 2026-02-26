@@ -61,17 +61,23 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-8"
+            className="flex flex-col items-center justify-center gap-6 mb-12"
           >
-            <span className="w-2 h-2 rounded-full bg-bio-lime animate-pulse" />
-            <span className="text-bio-lime font-mono text-xs md:text-sm tracking-widest uppercase">
-              Elmentoz Research
-            </span>
+            <img
+              src="/Elmentoz-ezgif.com-crop.gif"
+              alt="Elmentoz Logo Animation"
+              className="h-24 md:h-32 w-auto mix-blend-screen opacity-90 object-contain drop-shadow-[0_0_20px_rgba(204,255,0,0.3)]"
+            />
+            <img
+              src="/Elmentoz-Typo-Log.png"
+              alt="Elmentoz"
+              className="h-10 md:h-16 w-auto mix-blend-screen opacity-90 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]"
+            />
           </motion.div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold leading-[0.95] tracking-tighter mb-8 text-white">
+          <h1 className="text-6xl md:text-8xl lg:text-[9rem] font-serif font-normal leading-[0.9] tracking-[-0.04em] mb-8 text-white">
             <TextReveal text="Nourishing" className="block" />
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-bio-lime via-white to-bio-lime italic font-serif pb-4">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-bio-lime via-white to-bio-lime pb-4">
               <TextReveal text="The Planet" />
             </span>
           </h1>

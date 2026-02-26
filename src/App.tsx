@@ -40,12 +40,23 @@ function App() {
 
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-40 bg-bio-black/90 backdrop-blur-md border-b border-white/5 px-6 py-4 flex justify-between items-center transition-all">
-        <a href="#hero" className="font-bold text-xl tracking-tighter text-white cursor-pointer">ELMENTOZ</a>
-        
+        <a href="#hero" className="flex items-center gap-3 cursor-pointer group">
+          <img
+            src="/Elmentoz-ezgif.com-crop.gif"
+            alt="Elmentoz Logo Animation"
+            className="h-10 w-auto mix-blend-screen opacity-90 group-hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="/Elmentoz-Typo-Log.png"
+            alt="Elmentoz"
+            className="h-5 w-auto mix-blend-screen opacity-90 group-hover:opacity-100 transition-opacity mt-1"
+          />
+        </a>
+
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-8">
           {['Crisis', 'Solution', 'Technologies', 'Products', 'Impact'].map((item) => (
-            <a 
+            <a
               key={item}
               href={`#${item.toLowerCase()}`}
               className="text-sm font-medium text-bio-text-muted hover:text-bio-lime transition-colors uppercase tracking-wide"
@@ -56,7 +67,7 @@ function App() {
         </div>
 
         <div className="hidden lg:block">
-          <a 
+          <a
             href="#footer"
             className="px-6 py-2 border border-white/20 rounded-full text-sm text-white hover:bg-white hover:text-black transition-colors inline-block"
           >
@@ -65,7 +76,7 @@ function App() {
         </div>
 
         {/* Mobile/Tablet Menu Toggle */}
-        <button 
+        <button
           className="lg:hidden text-white p-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
@@ -84,7 +95,7 @@ function App() {
           >
             <div className="flex flex-col gap-6 text-center">
               {['Crisis', 'Solution', 'Technologies', 'Products', 'Impact'].map((item) => (
-                <a 
+                <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
                   onClick={() => setIsMenuOpen(false)}
@@ -93,7 +104,7 @@ function App() {
                   {item}
                 </a>
               ))}
-              <a 
+              <a
                 href="#footer"
                 onClick={() => setIsMenuOpen(false)}
                 className="mt-8 px-8 py-4 bg-bio-lime text-bio-black font-bold rounded-full inline-block"

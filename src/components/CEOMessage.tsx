@@ -36,19 +36,19 @@ export default function CEOMessage() {
             className="w-full md:w-7/12 text-center md:text-left"
           >
             <Reveal width="100%">
-              <h2 className="text-3xl md:text-4xl xl:text-5xl font-serif italic mb-10 leading-relaxed text-white">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-[4.5rem] font-serif font-normal tracking-[-0.04em] mb-12 leading-[0.9] text-white">
                 "Every 10 seconds, a child dies from hunger. Our agrifood systems are broken and demand urgent repair. Embracing a circular economy approach, we can restore our land to sustainably produce the food we need."
               </h2>
             </Reveal>
 
             <Reveal width="100%" delay={0.3}>
-              <div className="flex flex-col md:flex-row items-center md:items-start gap-4 mt-6 print:hidden">
-                <div className="w-12 h-1 bg-bio-lime hidden md:block mt-3" />
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-6 mt-6 print:hidden">
+                <div className="w-16 h-[2px] bg-bio-lime/50 hidden md:block mt-4" />
                 <div>
-                  <div className="text-xl md:text-2xl font-bold text-white mb-1">
+                  <div className="text-2xl md:text-3xl font-serif text-white mb-2">
                     Dr. Jayashankar Das
                   </div>
-                  <div className="text-sm md:text-base text-bio-lime uppercase tracking-wider font-semibold">
+                  <div className="text-xs md:text-sm text-bio-lime uppercase tracking-[0.2em] font-bold">
                     Founder & CEO, Elmentoz Research
                   </div>
                 </div>

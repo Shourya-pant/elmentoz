@@ -17,9 +17,9 @@ export default function Solution() {
           </Reveal>
 
           <Reveal width="100%" delay={0.1} className="flex justify-center">
-            <h3 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+            <h3 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-normal tracking-[-0.04em] leading-[0.9] mb-8 text-white">
               Nature's Most Efficient <br />
-              <span className="italic font-serif text-white/80">Bioconverter</span>
+              <span className="text-bio-lime">Bioconverter</span>
             </h3>
           </Reveal>
         </div>
@@ -41,7 +41,7 @@ export default function Solution() {
               <img
                 src="/spider-flu.png"
                 alt="Black Soldier Fly"
-                className="w-full h-full object-cover object-[70%_center] md:object-[90%_center] opacity-5 md:opacity-10 group-hover:opacity-60 scale-105 group-hover:scale-100 transition-all duration-1000 origin-right"
+                className="w-full h-full max-md:object-contain max-md:object-right-bottom object-cover object-[90%_center] opacity-15 md:opacity-10 group-hover:max-md:opacity-100 group-hover:opacity-60 scale-105 group-hover:scale-100 transition-all duration-1000 origin-right"
               />
               <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-bio-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             </div>
@@ -150,7 +150,7 @@ export default function Solution() {
               </div>
               <div>
                 <h4 className="text-2xl font-bold mb-2 group-hover:text-bio-lime transition-colors duration-300">Minimal Land Usage</h4>
-                <p className="text-bio-text-muted md:max-w-md group-hover:text-white transition-colors duration-300">Vertical farming allows us to produce protein with 99% less land than beef.</p>
+                <p className="text-bio-text-muted text-lg md:text-xl md:max-w-md group-hover:text-white transition-colors duration-300">Vertical farming allows us to produce protein with 99% less land than beef.</p>
               </div>
             </div>
 

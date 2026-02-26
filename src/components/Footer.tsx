@@ -6,12 +6,24 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 mb-24">
           <div>
-            <h2 className="text-5xl md:text-7xl font-bold mb-8">
+            <div className="flex items-center gap-4 mb-8">
+              <img
+                src="/Elmentoz-ezgif.com-crop.gif"
+                alt="Elmentoz Logo Animation"
+                className="h-12 md:h-16 w-auto mix-blend-screen opacity-90 object-contain drop-shadow-[0_0_15px_rgba(204,255,0,0.2)]"
+              />
+              <img
+                src="/Elmentoz-Typo-Log.png"
+                alt="Elmentoz"
+                className="h-8 md:h-12 w-auto mix-blend-screen opacity-90 drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]"
+              />
+            </div>
+            <h2 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-normal tracking-[-0.04em] leading-[0.9] text-white mb-10">
               Let's fix the <br />
               <span className="text-bio-lime">food system.</span>
             </h2>
-            <a 
-              href="mailto:info@elmentoz.com" 
+            <a
+              href="mailto:info@elmentoz.com"
               className="inline-flex items-center gap-2 text-xl hover:text-bio-lime transition-colors"
             >
               info@elmentoz.com <ArrowUpRight className="w-5 h-5" />
@@ -24,15 +36,15 @@ export default function Footer() {
               <ul className="space-y-6">
                 <li>
                   <strong className="block text-white mb-1">India (HQ)</strong>
-                  <p className="text-bio-text-muted text-sm">107, DLF Cyber City Rd, Bhubaneswar, Odisha 751024</p>
+                  <p className="text-bio-text-muted text-base">107, DLF Cyber City Rd, Bhubaneswar, Odisha 751024</p>
                 </li>
                 <li>
                   <strong className="block text-white mb-1">United Kingdom</strong>
-                  <p className="text-bio-text-muted text-sm">Gloucester House, Milton Keynes, MK9 2AH</p>
+                  <p className="text-bio-text-muted text-base">Gloucester House, Milton Keynes, MK9 2AH</p>
                 </li>
                 <li>
                   <strong className="block text-white mb-1">Norway</strong>
-                  <p className="text-bio-text-muted text-sm">Drammensveien 89 B, Oslo, 0271</p>
+                  <p className="text-bio-text-muted text-base">Drammensveien 89 B, Oslo, 0271</p>
                 </li>
               </ul>
             </div>
@@ -48,7 +60,7 @@ export default function Footer() {
                   { label: 'Careers', href: '#careers' }
                 ].map((item) => (
                   <li key={item.label}>
-                    <a href={item.href} className="text-white hover:text-bio-lime transition-colors">{item.label}</a>
+                    <a href={item.href} className="text-white text-lg hover:text-bio-lime transition-colors">{item.label}</a>
                   </li>
                 ))}
               </ul>

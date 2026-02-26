@@ -71,11 +71,11 @@ export default function Testimonials() {
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay" />
 
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-12">
+        <div className="grid lg:grid-cols-12 gap-16 lg:gap-12 items-center">
           {/* Text Content - Left Side on Desktop */}
-          <div className="w-full lg:w-4/12 text-center lg:text-left">
+          <div className="lg:col-span-5 text-center lg:text-left">
             <Reveal>
-              <h2 className="text-4xl md:text-6xl font-bold mb-8">Global <br className="hidden lg:block" /><span className="text-bio-lime italic font-serif">Recognition</span></h2>
+              <h2 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-normal tracking-[-0.04em] leading-[0.9] text-white mb-10">Global <br className="hidden lg:block" /><span className="text-bio-lime">Recognition</span></h2>
             </Reveal>
             <Reveal delay={0.1}>
               <p className="text-lg text-bio-text-muted mb-12 leading-relaxed">
@@ -85,9 +85,9 @@ export default function Testimonials() {
           </div>
 
           {/* Slider - Right Side on Desktop */}
-          <div className="w-full lg:w-8/12 w-full flex items-center justify-center relative mt-4 lg:mt-0">
-            {/* Custom Navigation Button - Prev */}
-            <div className="hidden sm:flex swiper-button-prev-custom w-12 h-12 bg-white/5 border border-white/10 backdrop-blur-md rounded-full items-center justify-center cursor-pointer hover:bg-white/10 hover:border-bio-lime/50 transition-all group shadow-xl ml-0 mr-4 shrink-0 relative z-20">
+          <div className="lg:col-span-7 flex flex-col sm:flex-row items-center justify-center relative mt-8 lg:mt-0">
+            {/* Custom Navigation Button - Prev (Desktop) */}
+            <div className="hidden sm:flex swiper-button-prev-custom w-12 h-12 bg-white/5 border border-white/10 backdrop-blur-md rounded-full items-center justify-center cursor-pointer hover:bg-white/10 hover:border-bio-lime/50 transition-all group shadow-xl mr-6 lg:mr-8 shrink-0 relative z-20">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-bio-lime"><path d="m15 18-6-6 6-6" /></svg>
             </div>
 
@@ -129,9 +129,19 @@ export default function Testimonials() {
               </Swiper>
             </Reveal>
 
-            {/* Custom Navigation Button - Next */}
-            <div className="hidden sm:flex swiper-button-next-custom w-12 h-12 bg-white/5 border border-white/10 backdrop-blur-md rounded-full items-center justify-center cursor-pointer hover:bg-white/10 hover:border-bio-lime/50 transition-all group shadow-xl ml-4 mr-0 shrink-0 relative z-20">
+            {/* Custom Navigation Button - Next (Desktop) */}
+            <div className="hidden sm:flex swiper-button-next-custom w-12 h-12 bg-white/5 border border-white/10 backdrop-blur-md rounded-full items-center justify-center cursor-pointer hover:bg-white/10 hover:border-bio-lime/50 transition-all group shadow-xl ml-6 lg:ml-8 shrink-0 relative z-20">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-bio-lime"><path d="m9 18 6-6-6-6" /></svg>
+            </div>
+
+            {/* Mobile Navigation Buttons */}
+            <div className="flex sm:hidden justify-center gap-8 mt-10 w-full relative z-20">
+              <div className="swiper-button-prev-custom w-14 h-14 bg-white/5 border border-white/10 backdrop-blur-md rounded-full flex items-center justify-center cursor-pointer hover:bg-white/10 hover:border-bio-lime/50 transition-all group shadow-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-bio-lime"><path d="m15 18-6-6 6-6" /></svg>
+              </div>
+              <div className="swiper-button-next-custom w-14 h-14 bg-white/5 border border-white/10 backdrop-blur-md rounded-full flex items-center justify-center cursor-pointer hover:bg-white/10 hover:border-bio-lime/50 transition-all group shadow-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-bio-lime"><path d="m9 18 6-6-6-6" /></svg>
+              </div>
             </div>
           </div>
         </div>

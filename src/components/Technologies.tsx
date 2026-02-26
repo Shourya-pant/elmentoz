@@ -36,8 +36,8 @@ export default function Technologies() {
     <section className="py-32 bg-bio-black" id="technologies">
       <div className="container mx-auto px-6">
         <div className="mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Core <span className="text-bio-lime">Technologies</span></h2>
-          <p className="text-bio-text-muted max-w-2xl">
+          <h2 className="text-5xl md:text-7xl lg:text-[6rem] font-serif font-normal tracking-[-0.04em] leading-[0.9] text-white/90 mb-6">Core <span className="text-bio-lime">Technologies</span></h2>
+          <p className="text-bio-text-muted text-xl md:text-2xl max-w-3xl leading-relaxed">
             Our proprietary stack enables us to produce consistent, high-quality ingredients at an industrial scale.
           </p>
         </div>
@@ -49,9 +49,10 @@ export default function Technologies() {
               <div
                 key={tech.id}
                 onMouseEnter={() => setActiveTech(tech.id)}
+                onClick={() => setActiveTech(tech.id)}
                 className={`cursor-pointer p-6 rounded-2xl transition-all duration-300 border group ${activeTech === tech.id
-                    ? 'bg-white/5 border-bio-lime/50'
-                    : 'bg-transparent border-transparent hover:bg-white/5 hover:border-white/10'
+                  ? 'bg-white/5 border-bio-lime/50'
+                  : 'bg-transparent border-transparent hover:bg-white/5 hover:border-white/10'
                   }`}
               >
                 <div className="flex items-center justify-between mb-4">
@@ -61,7 +62,7 @@ export default function Technologies() {
                   </h3>
                   <ArrowRight className={`w-5 h-5 transition-opacity lg:opacity-0 ${activeTech === tech.id ? 'lg:opacity-100 text-bio-lime' : ''}`} />
                 </div>
-                <p className={`text-sm leading-relaxed transition-colors mb-4 ${activeTech === tech.id ? 'text-bio-text' : 'text-bio-text-muted/50'}`}>
+                <p className={`text-base md:text-lg leading-relaxed transition-colors mb-4 ${activeTech === tech.id ? 'text-bio-text' : 'text-bio-text-muted/60'}`}>
                   {tech.desc}
                 </p>
 

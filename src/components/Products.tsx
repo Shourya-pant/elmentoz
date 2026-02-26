@@ -10,7 +10,7 @@ export default function Products() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="mb-20">
           <Reveal>
-            <h2 className="text-4xl md:text-6xl font-bold mb-6">Our <span className="italic font-serif text-bio-lime">Products</span></h2>
+            <h2 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-normal tracking-[-0.04em] leading-[0.9] mb-6 text-white/90">Our <span className="text-bio-lime">Products</span></h2>
           </Reveal>
         </div>
 

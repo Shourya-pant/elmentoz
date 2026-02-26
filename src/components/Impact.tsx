@@ -11,9 +11,9 @@ export default function Impact() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <Reveal>
-              <h2 className="text-4xl md:text-6xl font-bold mb-8">
+              <h2 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-normal tracking-[-0.04em] leading-[0.9] text-white mb-10">
                 Aligned with <br />
-                <span className="text-bio-lime italic font-serif">Global Goals</span>
+                <span className="text-bio-lime">Global Goals</span>
               </h2>
             </Reveal>
             <Reveal delay={0.1}>
