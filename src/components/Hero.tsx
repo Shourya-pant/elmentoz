@@ -19,7 +19,7 @@ export default function Hero() {
       {/* Dynamic Organic Background */}
       <motion.div style={{ scale, opacity }} className="absolute inset-0 z-0">
         <img
-          src="/hero-bg.png"
+          src="/hero-bg.webp"
           alt="Nature Tech Background"
           className="absolute inset-0 w-full h-full object-cover opacity-30"
         />

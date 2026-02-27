@@ -9,7 +9,7 @@ const technologies = [
     title: "Alternative Protein",
     desc: "High-grade insect protein meal suitable for aquaculture, poultry, and pet feed. Rich in essential amino acids and highly digestible.",
     stat: "60% Protein Content",
-    image: "/alt-protein.png" // User provided Abstract powder/texture
+    image: "/alt-protein.webp" // User provided Abstract powder/texture
   },
   {
     id: 1,
@@ -17,7 +17,7 @@ const technologies = [
     title: "Low FFA Oil",
     desc: "Advanced extraction technology yielding high-quality insect oil with low Free Fatty Acids. A sustainable alternative to palm and coconut oil.",
     stat: "< 1% Free Fatty Acids",
-    image: "/low-ffa-oil.png" // User provided Oil/Liquid texture
+    image: "/low-ffa-oil.webp" // User provided Oil/Liquid texture
   },
   {
     id: 2,

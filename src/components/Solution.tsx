@@ -39,7 +39,7 @@ export default function Solution() {
             {/* Added Hover Background Image */}
             <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
               <img
-                src="/spider-flu.png"
+                src="/spider-flu.webp"
                 alt="Black Soldier Fly"
                 className="w-full h-full max-md:object-contain max-md:object-right-bottom object-cover object-[90%_center] opacity-15 md:opacity-10 group-hover:max-md:opacity-100 group-hover:opacity-60 scale-105 group-hover:scale-100 transition-all duration-1000 origin-right"
               />
